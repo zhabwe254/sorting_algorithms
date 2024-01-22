@@ -37,11 +37,11 @@ void print_list(const listint_t *list);
 
 /** Task-Specific Function Prototypes */
 
-void bubble_sort(int *array, size_t size);
+void bubble_sort(int *arr, size_t len);
 int len_list(listint_t *head);
 void swap(listint_t *node_a, listint_t *node_b, listint_t **head);
 void insertion_sort_list(listint_t **list);
-
+void bubble_sort(int *arr, size_t len)
 void swap(int *a, int *b);
 int partition(int *array, int low, int high, size_t size);
 void lomuto_qsort(int *array, int low, int high, size_t size);
