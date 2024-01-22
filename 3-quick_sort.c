@@ -1,10 +1,5 @@
 #include "sort.h"
 
-void swap_ints(int *a, int *b);
-int lomuto_partition(int *array, size_t size, int left, int right);
-void lomuto_sort(int *array, size_t size, int left, int right);
-void quick_sort(int *array, size_t size);
-
 /**
  * swap_ints - Swap two integers in an array.
  * @a: The first integer to swap.
@@ -20,7 +15,7 @@ void swap_ints(int *a, int *b)
 }
 
 /**
- * lomuto_partition - Partition a subset of an array of integers using the Lomuto partition scheme.
+ * lomuto_partition - Partition a subset of array using Lomuto scheme.
  * @array: The array of integers.
  * @size: The size of the array.
  * @left: The starting index of the subset to order.
@@ -52,7 +47,7 @@ int lomuto_partition(int *array, size_t size, int left, int right)
 		print_array(array, size);
 	}
 
-	return above;
+	return (above);
 }
 
 /**
@@ -77,11 +72,11 @@ void lomuto_sort(int *array, size_t size, int left, int right)
 }
 
 /**
- * quick_sort - Sort an array of integers in ascending order using the quicksort algorithm.
+ * quick_sort - Sort an array of integers in ascending order.
  * @array: An array of integers.
  * @size: The size of the array.
  *
- * Description: Uses the Lomuto partition scheme. Prints the array after each swap of two elements.
+ * Description: Prints the array after each swap of two elements.
  */
 void quick_sort(int *array, size_t size)
 {
