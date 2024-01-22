@@ -6,13 +6,13 @@
  * @b_gh: Second integer.
  *	Return: (void)
  */
-void swap(int *a_gh, int *b_gh)
+void swap(int *a, int *b)
 {
 	int temp;
 
-	temp = *a_gh;
-	*a_gh = *b_gh;
-	*b_gh = temp;
+	temp = *a;
+	*a = *b;
+	*b = temp;
 }
 
 /**
