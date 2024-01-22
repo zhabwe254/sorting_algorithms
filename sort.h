@@ -42,10 +42,15 @@ int len_list(listint_t *head);
 void swap(listint_t *node_a, listint_t *node_b, listint_t **head);
 void insertion_sort_list(listint_t **list);
 
-void swap(int *a_gh, int *b_gh);
+void swap(int *a, int *b);
 int partition(int *array, int low, int high, size_t size);
 void lomuto_qsort(int *array, int low, int high, size_t size);
 void quick_sort(int *array, size_t size)
+
+void swap_ints(int *a, int *b);
+int lomuto_partition(int *array, size_t size, int left, int right);
+void lomuto_sort(int *array, size_t size, int left, int right);
+void quick_sort(int *array, size_t size);
 
 void selection_sort(int *array, size_t size);
 void quick_recursion(int *array, int left, int right, size_t size);
