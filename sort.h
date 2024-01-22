@@ -41,8 +41,13 @@ void bubble_sort(int *array, size_t size);
 int len_list(listint_t *head);
 void swap(listint_t *node_a, listint_t *node_b, listint_t **head);
 void insertion_sort_list(listint_t **list);
+
+void swap(int *a_gh, int *b_gh);
+int partition(int *array, int low, int high, size_t size);
+void lomuto_qsort(int *array, int low, int high, size_t size);
+void quick_sort(int *array, size_t size)
+
 void selection_sort(int *array, size_t size);
-void quick_sort(int *array, size_t size);
 void quick_recursion(int *array, int left, int right, size_t size);
 int partition(int *array, int left, int right, size_t size);
 void shell_sort(int *array, size_t size);
